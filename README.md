@@ -5,7 +5,7 @@ A standard data format for publishing evidence of public participation in techni
 
 # Overview
 
-Our goals are to have a shared and linked metadata and data model for opening data from and about hackathons. Here we describe how this may be published in the [JSON serialization for Linked Data](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://json-ld.org/&ved=2ahUKEwifyq272qGJAxV48LsIHe-qFuMQFnoECAgQAQ&usg=AOvVaw0KYV5lDp9ZQ0M18tp93C6E) (JSON-LD, or just `json`) format.
+Our goals are to have a shared and linked metadata and data model for opening data from and about hackathons. Here we describe how this may be published in the [JSON serialization for Linked Data](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://json-ld.org/&ved=2ahUKEwifyq272qGJAxV48LsIHe-qFuMQFnoECAgQAQ&usg=AOvVaw0KYV5lDp9ZQ0M18tp93C6E) (JSON-LD, or just `json`) format. 
 
 # Basic type
 
@@ -82,6 +82,7 @@ Retrieved from https://hack.glam.opendata.ch/hackathon.json on 2024-10-22:
 - [Frictionless Data](https://frictionlessdata.io) 
 - [Open Event Data](https://www.openeventdata.ch)
 - [Dublin Core™](https://www.dublincore.org/specifications/dublin-core/)
+- [Dribdat API](https://dribdat.cc/contribute.html#api-guide) (see [issue #112](https://github.com/dribdat/dribdat/issues/112))
 
 # Implementations 
 
