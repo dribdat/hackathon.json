@@ -1,14 +1,15 @@
-# hackathon.json
+hackathon.json Specification
+----------------------------
 
 A standard data format for publishing evidence of public participation in technical events.
 
-# Goals
+# Overview
 
 Our goals are to have a shared and linked metadata and data model for opening data from and about hackathons. Here we describe how this may be published in the [JSON serialization for Linked Data](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://json-ld.org/&ved=2ahUKEwifyq272qGJAxV48LsIHe-qFuMQFnoECAgQAQ&usg=AOvVaw0KYV5lDp9ZQ0M18tp93C6E) (JSON-LD, or just `json`) format.
 
-# Basic fields
+# Basic type
 
-The data model for `hackathon.json``is based on the [Hackathon type](https://schema.org/Hackathon) at Schema.org, which defines the properties and sub-entities involved in describing an event of this type. 
+The data model for `hackathon.json` is based on the [Hackathon type](https://schema.org/Hackathon) at Schema.org, which defines the properties and sub-entities involved in describing an event of this type. 
 
 The essentials of this is a header that includes a `@context` and `@type` reference, along with top-level properties such as `name` and `startDate`, as follows:
 
