@@ -1,0 +1,66 @@
+/**
+ * Hackathon.json
+ *
+ *    Color Scheme
+ *
+ *        https://paletton.com/#uid=35p1b0kllllaFw0g0qFqFg0w0aF
+ * 
+ *    Inspired by GeoJSON.org & Python Baku
+ *
+ * @author    Oleg "seism" Lavrovsky
+ */
+
+/* Basic Elements */
+  body {
+    font-size: 115%;
+    margin: 1em 2em 2em;
+    color: #333333;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 800;
+    color: #D60000;
+  }
+  h1 span {
+    color: #D6C300;
+  }
+  a {
+    text-decoration: none;
+    color: #2B2BB3;
+  }
+  a:hover {
+    color: #161696;
+  }
+  code.highlighter-rouge {
+    color: #D60000;
+  }
+
+/* Splash page - centered column */
+  .splash {
+    width: 80%;
+    min-width: 450px;
+    margin: 0 auto;
+  }
+  .splash h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+/* Syntax Highlighting - see ./pygments.css */
+  pre {
+    font-size: 95%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #eee;
+  }
+
+/* Use a better box model - http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  * { box-sizing: border-box; }
+
+/* Minimalist scrollbars in webkit - https://geojson.org */
+  ::-webkit-scrollbar         {width: 12px;}
+  ::-webkit-scrollbar-track   {border-radius: 10px;                       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+  ::-webkit-scrollbar-thumb   {border-radius: 10px; background: #AAAAAA;  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);}
+  ::-webkit-scrollbar-corner  {display: none;}

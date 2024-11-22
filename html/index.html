@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>hackathon.json</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="static/pygments.css">
+    <link rel="stylesheet" href="static/main.css">
+  </head>
+  <body>
+    <section class="content">
+      <article class="splash">
+<h1 id="geojson">hackathon<span class="fkin">.json</span></h1>
+
+<p>A JSON format for encoding challenges and results from a variety of time-limited collaborative events.</p>
+
+<pre class="highlight">
+  <span class="p">{</span>
+  <span class="w">  </span><span class="nt">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://schema.org"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hackathon"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Tech We Want"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A collective conversation"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"startDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-10-17T09:00"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"endDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-10-18T18:00"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://meta.dribdat.cc/event/25"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://okfn.org/assets/images/lg-okfn.svg"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"mainEntityOfPage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://okfn.org/events/the-tech-we-want-online-summit/"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"offers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+  <span class="w">    </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Offer"</span><span class="p">,</span>
+  <span class="w">    </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://okfn.org/events/the-tech-we-want-online-summit/"</span>
+  <span class="w">  </span><span class="p">},</span>
+  <span class="w">  </span><span class="nt">"workPerformed"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+  <span class="w">    </span><span class="p">{</span>
+  <span class="w">      </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CreativeWork"</span><span class="p">,</span>
+  <span class="w">      </span><span class="nt">"dateCreated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-10-18T12:46"</span><span class="p">,</span>
+  <span class="w">      </span><span class="nt">"dateModified"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-10-18T12:47"</span><span class="p">,</span>
+  <span class="w">      </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Take conversational artifacts, and run hackathons based on the data."</span><span class="p">,</span>
+  <span class="w">      </span><span class="nt">"discussionUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+  <span class="w">      </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+  <span class="w">      </span><span class="nt">"license"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://creativecommons.org/licenses/by/4.0/"</span><span class="p">,</span>
+  <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Community gardening 🍀"</span><span class="p">,</span>
+  <span class="w">      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://meta.dribdat.cc/project/152"</span>
+  <span class="w">    </span><span class="p">}</span>
+  <span class="w">  </span><span class="p">]</span>
+  <span class="p">}</span>
+</pre>
+
+<p>Hackathon JSON supports the following content types: <code class="highlighter-rouge">Attendee</code>, <code class="highlighter-rouge">Audience</code>, <code class="highlighter-rouge">Duration</code>, <code class="highlighter-rouge">Certification</code>, and <code class="highlighter-rouge">Place</code> for location data. Hackathon challenges and projects are objects with additional properties tagged <code class="highlighter-rouge">CreativeWork</code>.</p>
+
+<h2>The Hackathon Specification (Schema.org)</h2>
+
+<p>In 2020, the <a href="https://schema.org/Hackathon" target="_blank">Hackathon type</a> was <a href="https://github.com/schemaorg/schemaorg/issues/2526" target="_blank">accepted</a> as a part of the linked data model for web entities at <b>Schema.org</b>, which defines the properties and sub-entities involved in describing <a href="https://schema.org/event" target="_blank">events</a> using web-friendly metadata. The <tt>hackathon.json</tt> specification follows from this.</p>
+
+<p>For more technical details and related standards, please see the <a href="https://codeberg.org/dribdat/hackathon.json/">source README</a>.</p>
+
+<tt><b>Launched at <a href="https://hackthackathon.github.io/" target="_blank">Hack the Hackathon vol. 4</a> in 2024</b></tt>
+
+</article>
+
+    </section>
+    
+  </body>
+</html>
