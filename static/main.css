@@ -35,6 +35,21 @@
     color: #D60000;
   }
 
+  .bold { font-weight:bold; }
+  .btn {
+    background: black;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-family: sans-serif;
+  }
+  .btn:hover {
+    opacity: 0.8;
+  }
+  .bg-orange { background: darkorange; }
+  .bg-green { background: green; }
+  .bg-red { background: #d00; }
+
 /* Splash page - centered column */
   .splash {
     width: 80%;

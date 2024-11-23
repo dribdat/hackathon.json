@@ -15,7 +15,7 @@
       <article class="splash">
 <h1 id="geojson">hackathon<span class="fkin">.json</span></h1>
 
-<p>A JSON format for encoding challenges and results from a variety of time-limited collaborative events.</p>
+<p>A <a href="https://json-ld.org/" target="_blank">JSON-LD</a> format for encoding challenges and results from time-limited collaborative events.</p>
 
 <pre class="highlight">
   <span class="p">{</span>
@@ -26,6 +26,7 @@
   <span class="w">  </span><span class="nt">"startDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-10-17T09:00"</span><span class="p">,</span>
   <span class="w">  </span><span class="nt">"endDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-10-18T18:00"</span><span class="p">,</span>
   <span class="w">  </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://meta.dribdat.cc/event/25"</span><span class="p">,</span>
+  <span class="w">  </span><span class="nt">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Planet Earth"</span><span class="p">,</span>
   <span class="w">  </span><span class="nt">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://okfn.org/assets/images/lg-okfn.svg"</span><span class="p">,</span>
   <span class="w">  </span><span class="nt">"mainEntityOfPage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://okfn.org/events/the-tech-we-want-online-summit/"</span><span class="p">,</span>
   <span class="w">  </span><span class="nt">"offers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -48,13 +49,16 @@
   <span class="p">}</span>
 </pre>
 
-<p>Hackathon JSON supports the following content types: <code class="highlighter-rouge">Attendee</code>, <code class="highlighter-rouge">Audience</code>, <code class="highlighter-rouge">Duration</code>, <code class="highlighter-rouge">Certification</code>, and <code class="highlighter-rouge">Place</code> for location data. Hackathon challenges and projects are objects with additional properties tagged <code class="highlighter-rouge">CreativeWork</code>.</p>
+<p>Hackathon JSON supports a range of sub-content types to describe the event: <code class="highlighter-rouge">Attendee</code> or <code class="highlighter-rouge">Audience</code>, <code class="highlighter-rouge">Duration</code> / <code class="highlighter-rouge">startDate</code> / <code class="highlighter-rouge">endDate</code>, <code class="highlighter-rouge">Certification</code>, and <code class="highlighter-rouge">Location</code>. Hackathon challenges and projects are objects with additional properties tagged <code class="highlighter-rouge">CreativeWork</code>.</p>
+
+<a class="btn bg-orange" href="https://www.schemantra.com/schema_list/Hackathon" title="JSON Schema Generator (Schemantra)" target="_blank"><span>Generate JSON</span></a>
+<a class="btn bg-red" href="https://validator.schema.org/" title="Schema Validator (Schema.org)" target="_blank"><span>Test JSON</span></a>
 
 <h2>The Hackathon Specification (Schema.org)</h2>
 
 <p>In 2020, the <a href="https://schema.org/Hackathon" target="_blank">Hackathon type</a> was <a href="https://github.com/schemaorg/schemaorg/issues/2526" target="_blank">accepted</a> as a part of the linked data model for web entities at <b>Schema.org</b>, which defines the properties and sub-entities involved in describing <a href="https://schema.org/event" target="_blank">events</a> using web-friendly metadata. The <tt>hackathon.json</tt> specification follows from this.</p>
 
-<p>For more technical details and related standards, please see the <a href="https://codeberg.org/dribdat/hackathon.json/">source README</a>.</p>
+<p>For more details and related standards, please see the <a class="bold" href="https://codeberg.org/dribdat/hackathon.json/">technical README</a>.</p>
 
 <tt><b>Launched at <a href="https://hackthackathon.github.io/" target="_blank">Hack the Hackathon vol. 4</a> in 2024</b></tt>
 
