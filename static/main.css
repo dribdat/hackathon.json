@@ -45,6 +45,7 @@
   }
   .btn:hover {
     opacity: 0.8;
+    color: white;
   }
   .bg-orange { background: darkorange; }
   .bg-green { background: green; }

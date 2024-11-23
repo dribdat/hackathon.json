@@ -84,9 +84,15 @@ Retrieved from https://hack.glam.opendata.ch/hackathon.json on 2024-10-22:
 - [Dublin Core™](https://www.dublincore.org/specifications/dublin-core/)
 - [Dribdat API](https://dribdat.cc/contribute.html#api-guide) (see [issue #112](https://github.com/dribdat/dribdat/issues/112))
 
-# Implementations 
+# Tools
 
-The following applications help to generate a `hackathon.json`, or visualize this format to showcase documentation, prototypes, and other sprint results. Please add yours to this list with a quick Pull Request.
+The following applications can generate a `hackathon.json`, visualize the format, or validate your schema:
 
-- [Dribdat](https://codeberg.org/dribdat/dribdat) (Python)
-- [Backboard](https://codeberg.org/dribdat/backboard) (JavaScript)
+- [Schema Validator](https://validator.schema.org/) (Validator at Schema.org)
+- [Schemantra](https://www.schemantra.com/schema_list/Hackathon) (Generator: fill out a form)
+- [Dribdat](https://codeberg.org/dribdat/dribdat) (Generator: a Python tool for hackathons)
+- [Backboard](https://codeberg.org/dribdat/backboard) (Viewer: a JavaScript renderer, part of Dribdat)
+
+# License
+
+[CC0 1.0 Universal](LICENSE)
