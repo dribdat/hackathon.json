@@ -79,6 +79,8 @@ Retrieved from https://hack.glam.opendata.ch/hackathon.json on 2024-10-22:
 
 # Related standards
 
+- [civic.json](https://open.dc.gov/civic.json/specification.html)
+- [eo-on-schema.org](https://github.com/eovoc/eo-on-schema.org)
 - [Frictionless Data](https://frictionlessdata.io) 
 - [Open Event Data](https://www.openeventdata.ch)
 - [Dublin Core™](https://www.dublincore.org/specifications/dublin-core/)
